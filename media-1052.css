@@ -1,0 +1,12 @@
+@media all and (max-width: 65.75em) {
+    html {
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0 1rem;
+    }
+
+}
