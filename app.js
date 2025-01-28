@@ -10,11 +10,19 @@ function sortear(){
             numerosSorteados.push(numeroSorteado);
         }
     }
-    document.getElementById("resultado").innerHTML = "Numeros Sorteados: " + numerosSorteados;
+    document.getElementById("resultado").innerHTML = "Números Sorteados: " + numerosSorteados;
     
+    if (quantidade > 0 && menorNumero > 0 && maiorNumero > 0){
+        habilitarBotao();
+    }
+    
+}
+
+function habilitarBotao(){
     let trocaClassBotao = document.getElementById("btn-reiniciar");
     trocaClassBotao.classList.remove("container__botao-desabilitado");
     trocaClassBotao.classList.add("container__botao");
+    trocaClassBotao.removeAttribute("disabled");
 }
 
 function gerarNumeroAleatorio(menorNumero, maiorNumero){
@@ -25,8 +33,13 @@ function reiniciar(){
     document.getElementById("quantidade").value = "";
     document.getElementById("menorNumero").value = "";
     document.getElementById("maiorNumero").value = "";
-    document.getElementById("resultado").innerHTML = "";
+    document.getElementById("resultado").innerHTML = "Números Sorteados: ";
+    desabilitarBotao();    
+}
+
+function desabilitarBotao(){
     let trocaClassBotao = document.getElementById("btn-reiniciar");
     trocaClassBotao.classList.remove("container__botao");
     trocaClassBotao.classList.add("container__botao-desabilitado");
+    trocaClassBotao.setAttribute("disabled");
 }
