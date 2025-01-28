@@ -126,6 +126,15 @@ h1 {
     padding: 2rem;
 }
 
+#resultado {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .texto__paragrafo {
     color: #FFF;
     font-family: 'Inter';
