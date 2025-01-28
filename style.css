@@ -32,7 +32,7 @@ body::before {
 
 .container {
     width: 40%;
-    margin-top: -15rem;
+    margin-top: -20rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
