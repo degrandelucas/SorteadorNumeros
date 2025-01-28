@@ -10,7 +10,6 @@ function sortear(){
             numerosSorteados.push(numeroSorteado);
         }
     }
-    alert(numerosSorteados);
     document.getElementById("resultado").innerHTML = "Numeros Sorteados: " + numerosSorteados;
     
     let trocaClassBotao = document.getElementById("btn-reiniciar");
