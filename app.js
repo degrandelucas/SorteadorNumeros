@@ -3,6 +3,17 @@ function sortear(){
     let menorNumero = parseInt(document.getElementById("menorNumero").value);
     let maiorNumero = parseInt(document.getElementById("maiorNumero").value);
 
+    if (menorNumero > maiorNumero){
+        alert("O 'Do número', ou seja, número inicial precisa ser menor que o 'Ate o número' (número maior).");
+        return;
+    }
+
+    if ((maiorNumero - menorNumero + 1) < quantidade){
+        alert("A quantidade de números a serem sorteados deve ser menor ou igual ao intervalo de números disponíveis.");
+        return;
+    }
+
+
     let numerosSorteados = [];
     while (numerosSorteados.length < quantidade){
         let numeroSorteado = gerarNumeroAleatorio(menorNumero, maiorNumero);
