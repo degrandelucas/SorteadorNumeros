@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    background: linear-gradient(#9e6993 0%, #9e6993 33.33%, #9e6993 66.67%, #9e6993 100%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -19,7 +19,6 @@ body {
 }
 
 body::before {
-    background-image: url("img/code.png");
     background-repeat: no-repeat;
     background-position: right;
     content: "";
@@ -32,12 +31,11 @@ body::before {
 
 .container {
     width: 40%;
-    margin-top: -20rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 2.4rem;
-    border: 0.1rem solid #1875E8;
+    border: 0.1rem solid #4d1941;
     box-shadow: 0.4rem 0.4rem 2rem 0rem rgba(1, 8, 14, 0.15);
     background-image: url("img/Ruido.png");
     background-size: 100% 100%;
@@ -64,7 +62,7 @@ body::before {
 }
 
 .container__texto-azul {
-    color: #1875E8;
+    color: #4d1941;
     display: block;
 
 }
@@ -82,7 +80,7 @@ body::before {
     border-radius: 1.6rem;
     background-color: #FFF;
     border: none;
-    color: #1875E8;
+    color: #4d1941;
     padding: 2rem;
     font-size: 2.4rem;
     font-weight: 700;
@@ -97,7 +95,7 @@ body::before {
 
 .container__botao {
     border-radius: 1.6rem;
-    background: #1875E8;
+    background: #4d1941;
     padding: 1.6rem 2.4rem;
     font-size: 2.4rem;
     width: 40%;
@@ -124,16 +122,24 @@ h1 {
     font-weight: 700;
     line-height: 100%;
     padding: 2rem;
+    align-items: center;
 }
 
 #resultado {
-    color: #FFF;
+    color: #4d1941;
     font-family: 'Inter';
     font-size: 3.2rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     line-height: normal;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    justify-self: center;
+    width: 10%;
+    align-items: center;
 }
+
 
 .texto__paragrafo {
     color: #FFF;

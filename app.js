@@ -21,7 +21,7 @@ function sortear(){
             numerosSorteados.push(numeroSorteado);
         }
     }
-    document.getElementById("resultado").innerHTML = "Números Sorteados: " + numerosSorteados;
+    document.getElementById("resultado").innerHTML = numerosSorteados;
     
     if (quantidade > 0 && menorNumero > 0 && maiorNumero > 0){
         habilitarBotao();
@@ -44,7 +44,7 @@ function reiniciar(){
     document.getElementById("quantidade").value = "";
     document.getElementById("menorNumero").value = "";
     document.getElementById("maiorNumero").value = "";
-    document.getElementById("resultado").innerHTML = "Números Sorteados: ";
+    document.getElementById("resultado").innerHTML = "";
     desabilitarBotao();    
 }
 
