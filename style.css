@@ -126,14 +126,12 @@ h1 {
 }
 
 #resultado {
-    color: #4d1941;
+    color: #FFF;
     font-family: 'Inter';
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    background-color: #FFF;
-    border-radius: 20%;
     display: flex;
     justify-self: center;
     width: 10%;
