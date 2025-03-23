@@ -91,6 +91,7 @@ body::before {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    justify-content: center;
 }
 
 .container__botao {
@@ -102,6 +103,7 @@ body::before {
     font-weight: 700;
     border: none;
     cursor: pointer;
+    
 }
 
 .container__botao-desabilitado {
